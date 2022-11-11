@@ -1,18 +1,12 @@
-# revision 32089
-# category Package
-# catalog-ctan /fonts/accanthis
-# catalog-date 2013-11-06 07:22:54 +0100
-# catalog-license gpl2
-# catalog-version undef
 Name:		texlive-accanthis
-Version:	20190228
+Version:	64844
 Release:	1
 Summary:	Accanthis fonts, with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/accanthis
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/accanthis.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/accanthis.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/accanthis.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/accanthis.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ old style, Sabon, and Bembo. The support files are suitable for
 use with all LaTeX engines.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -125,7 +119,7 @@ use with all LaTeX engines.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
