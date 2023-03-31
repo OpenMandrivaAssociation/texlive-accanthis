@@ -1,6 +1,6 @@
 Name:		texlive-accanthis
 Version:	64844
-Release:	1
+Release:	2
 Summary:	Accanthis fonts, with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/accanthis
