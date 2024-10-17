@@ -3,7 +3,7 @@ Version:	64844
 Release:	2
 Summary:	Accanthis fonts, with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/accanthis
+URL:		https://www.ctan.org/tex-archive/fonts/accanthis
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/accanthis.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/accanthis.doc.r%{version}.tar.xz
